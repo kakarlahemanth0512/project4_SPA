@@ -1,10 +1,3 @@
-FROM node:lts-alpine AS builder
-
-WORKDIR /app
-
-COPY package*.json ./
-RUN npm install
-
 FROM node:lts-alpine
 
 WORKDIR /app
